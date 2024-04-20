@@ -18,7 +18,7 @@ while op != 4:
     [ 3 ] Extrato
     [ 4 ] Sair
     ''')
-    op = int(input('Digite a opção desejada: '))
+    op = int(input('Digite a operação desejada: '))
     
     if op == 1:
         
@@ -41,13 +41,13 @@ while op != 4:
                 limite_saque += 1
                 
             elif saque <= limite:
-                print('Saque de {:.2f} efetuado com sucesso!'.format(saque))
+                print('Saque de {:.2f}R$ efetuado com sucesso!'.format(saque))
 
         else:        
            print('Não sera possivel sacar por falta de saldo!')
     elif op == 3:
         saldo = deposito - t_sacado
-        extrato = print('Valor deposito: {:.2f}\nValor sacado: {:.2f}\nSaldo conta:{:.2f}'.format(deposito, t_sacado, saldo))
+        extrato = print('Valor deposito: {:.2f}R$\nValor sacado: {:.2f}R$\nSaldo conta:{:.2f}R$'.format(deposito, t_sacado, saldo))
         #todos os saques devem ser armazenados em na variavel extrato.
     
     elif op == 4:
